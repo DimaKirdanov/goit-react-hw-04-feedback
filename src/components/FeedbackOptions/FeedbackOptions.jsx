@@ -8,7 +8,7 @@ export default function FeedbackOptions({ options, onLeaveFeedback }) {
         <button
           type="button"
           key={item}
-          onClick={onLeaveFeedback}
+          onClick={e => onLeaveFeedback(e.target.value)}
           value={item}
           className={styles.button}
         >
