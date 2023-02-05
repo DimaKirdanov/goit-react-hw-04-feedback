@@ -1,0 +1,24 @@
+.name {
+  margin-left: 20px;
+  font-size: 20px;
+  color: blue;
+  font-weight: 700;
+}
+.nameGood {
+  composes: name;
+  font-weight: 500;
+
+  color: green;
+}
+.nameNeutral {
+  composes: nameGood;
+  color: orange;
+}
+.nameBad {
+  composes: nameGood;
+  color: red;
+}
+.namePositive {
+  composes: name;
+  color: cornflowerblue;
+}
