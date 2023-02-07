@@ -8,8 +8,8 @@ function App() {
   const [neutral, setNeutral] = useState(0);
   const [bad, setBad] = useState(0);
 
-  const handleIncrement = value => {
-    switch (value) {
+  const handleIncrement = type => {
+    switch (type) {
       case 'good':
         setGood(state => state + 1);
         break;
